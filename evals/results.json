@@ -1,0 +1,128 @@
+[
+  {
+    "id": "vector_db",
+    "query": "Compare the top 3 open-source vector databases for a startup building RAG products.",
+    "faults": "",
+    "expected": [
+      "DONE",
+      "DEGRADED"
+    ],
+    "exit_code": 0,
+    "wall_s": 26.8,
+    "status": "DONE",
+    "confidence": "MEDIUM",
+    "findings": 7,
+    "sources": 5,
+    "domains": 5,
+    "coverage": "3/3",
+    "reasons": [],
+    "llm_calls": 6,
+    "searches": 6,
+    "fetches": 4,
+    "retries": 0,
+    "short_answer": "The top three open\u2011source vector databases for a startup building RAG products are Qdrant, Weaviate, and Milvus. Qdrant is praised for production\u2011ready RAG and metadata filtering, Weaviate offers buil",
+    "pass": true
+  },
+  {
+    "id": "multi_agent",
+    "query": "Research the pros and cons of using a multi-agent architecture for customer support automation.",
+    "faults": "",
+    "expected": [
+      "DONE",
+      "DEGRADED"
+    ],
+    "exit_code": 0,
+    "wall_s": 29.7,
+    "status": "DONE",
+    "confidence": "MEDIUM",
+    "findings": 8,
+    "sources": 5,
+    "domains": 5,
+    "coverage": "3/3",
+    "reasons": [],
+    "llm_calls": 6,
+    "searches": 6,
+    "fetches": 6,
+    "retries": 0,
+    "short_answer": "A multi\u2011agent architecture can boost throughput and reduce latency by parallelizing tasks, and it allows clear separation of responsibilities with an AI Supervisor coordinating actions and policy enfo",
+    "pass": true
+  },
+  {
+    "id": "memory_approaches",
+    "query": "Compare different approaches to adding memory in an AI support agent.",
+    "faults": "",
+    "expected": [
+      "DONE",
+      "DEGRADED"
+    ],
+    "exit_code": 0,
+    "wall_s": 26.1,
+    "status": "DONE",
+    "confidence": "MEDIUM",
+    "findings": 7,
+    "sources": 4,
+    "domains": 4,
+    "coverage": "3/3",
+    "reasons": [],
+    "llm_calls": 6,
+    "searches": 6,
+    "fetches": 3,
+    "retries": 0,
+    "short_answer": "AI support agents can add memory through short\u2011term context windows, long\u2011term persistent storage, and hybrid vector\u2011plus\u2011graph systems. Short\u2011term memory is fast but limited in size, long\u2011term memory",
+    "pass": true
+  },
+  {
+    "id": "nonsense",
+    "query": "asdkjh qwpoeiru zxcmnb lkjhg",
+    "faults": "",
+    "expected": [
+      "FAILED_GRACEFULLY"
+    ],
+    "exit_code": 2,
+    "wall_s": 2.4,
+    "status": "FAILED_GRACEFULLY",
+    "confidence": "LOW",
+    "findings": 0,
+    "sources": 0,
+    "domains": 0,
+    "coverage": "0/0",
+    "reasons": [
+      "NOT_ANSWERABLE"
+    ],
+    "llm_calls": 1,
+    "searches": 0,
+    "fetches": 0,
+    "retries": 0,
+    "short_answer": "The request does not contain a clear question or topic to research.",
+    "pass": true
+  },
+  {
+    "id": "search_faults",
+    "query": "Compare the top 3 open-source vector databases for a startup building RAG products.",
+    "faults": "timeout:0.6",
+    "expected": [
+      "DONE",
+      "DEGRADED",
+      "FAILED_GRACEFULLY"
+    ],
+    "exit_code": 0,
+    "wall_s": 42.2,
+    "status": "DEGRADED",
+    "confidence": "LOW",
+    "findings": 3,
+    "sources": 2,
+    "domains": 2,
+    "coverage": "2/3",
+    "reasons": [
+      "BUDGET_EXHAUSTED",
+      "SNIPPET_ONLY_EVIDENCE",
+      "UNCOVERED_SUBQUESTIONS"
+    ],
+    "llm_calls": 6,
+    "searches": 8,
+    "fetches": 4,
+    "retries": 6,
+    "short_answer": "The top three open\u2011source vector databases for a startup building RAG products are Qdrant, Weaviate, and Milvus. Qdrant is praised for production\u2011ready RAG and metadata filtering, Weaviate offers self",
+    "pass": true
+  }
+]

@@ -1,0 +1,161 @@
+{
+  "run_id": "20261030T090653-3d804d",
+  "user_question": "Compare the top 3 open-source vector databases for a startup building RAG products",
+  "short_answer": "The top three open‑source vector databases most cited for RAG are Qdrant, Milvus, and Pinecone (though Pinecone is technically a managed service, its open‑source core is often referenced). Qdrant excels at real‑time search with rich filtering, Milvus offers GPU acceleration and large‑scale throughput, and Pinecone provides mature integration with RAG frameworks. Performance comparisons show Milvus and Qdrant outperform Pinecone in benchmark tests, while Pinecone’s ecosystem is the most mature for rapid prototyping.",
+  "key_findings": [
+    {
+      "statement": "Qdrant is an open‑source Rust vector database known for real‑time embedding search and advanced filtering.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Milvus is an open‑source, GPU‑accelerated vector database optimized for large‑scale, high‑throughput use.",
+      "evidence_ids": [
+        "E2"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Milvus is identified as the leading open‑source vector database for RAG workloads.",
+      "evidence_ids": [
+        "E5"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Milvus now supports SSD‑optimized vector indexing, reducing memory usage while preserving performance.",
+      "evidence_ids": [
+        "E6"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Performance testing shows 6‑9× better performance than Pinecone in RAG workloads.",
+      "evidence_ids": [
+        "E3"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Major RAG frameworks such as LangChain and LlamaIndex have first‑class Pinecone support, indicating a mature integration ecosystem.",
+      "evidence_ids": [
+        "E4"
+      ],
+      "support": "supported"
+    }
+  ],
+  "sources_used": [
+    {
+      "id": "S1",
+      "url": "https://www.zenml.io/blog/vector-databases-for-rag",
+      "domain": "zenml.io",
+      "title": "We Tried and Tested 10 Best Vector Databases for RAG Pipelines - ZenML Blog",
+      "published_date": null,
+      "quality_score": 0.67428984,
+      "fetched": false,
+      "snippet_only": true,
+      "flags": [],
+      "sub_question_ids": [
+        "q1"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://finance.yahoo.com/news/kioxia-aisaq-technology-integrated-milvus-020500176.html",
+      "domain": "yahoo.com",
+      "title": "KIOXIA AiSAQ Technology Integrated into Milvus Vector Database",
+      "published_date": "2025-12-17",
+      "quality_score": 0.6524004688888889,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q2"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://www.firecrawl.dev/blog/best-vector-databases",
+      "domain": "firecrawl.dev",
+      "title": "Best Vector Databases in 2026: A Complete Comparison Guide",
+      "published_date": null,
+      "quality_score": 0.6565314688888889,
+      "fetched": false,
+      "snippet_only": true,
+      "flags": [
+        "fetch_failed:SECURITY_BLOCKED"
+      ],
+      "sub_question_ids": [
+        "q2"
+      ]
+    }
+  ],
+  "confidence": {
+    "level": "LOW",
+    "coverage_ratio": 0.6666666666666666,
+    "avg_source_quality": 0.661073925925926,
+    "min_independent_domains": 1,
+    "unresolved_conflicts": 0,
+    "snippet_only_ratio": 0.6666666666666666,
+    "verification_complete": true,
+    "reasons": [
+      "Neither the HIGH nor MEDIUM confidence conditions are all satisfied.",
+      "Not met for MEDIUM: coverage meets 0.70."
+    ]
+  },
+  "limitations_and_assumptions": [
+    "No direct performance or scalability data for Qdrant beyond the claim of real‑time search; no explicit comparison of Qdrant vs Milvus or Pinecone in the evidence; the evidence does not mention Pinecone’s open‑source status or its performance relative to Milvus and Qdrant. The list of top databases is inferred rather than explicitly ranked in the evidence.",
+    "No verified evidence was found for: Summarize the pros and cons of each database for a startup building RAG products.",
+    "67% of evidence items came from snippets only.",
+    "A resource budget was exhausted before all research could complete.",
+    "candidate list from model knowledge, verified by q1 search"
+  ],
+  "suggested_next_steps": [
+    "Search for benchmark studies comparing Qdrant, Milvus, and Pinecone on latency and throughput for RAG workloads.",
+    "Gather documentation on Qdrant’s scalability limits and GPU support to compare with Milvus.",
+    "Investigate Pinecone’s open‑source core and its performance metrics relative to the other two databases."
+  ],
+  "conflicts": [],
+  "coverage": {
+    "total": 3,
+    "covered": 2,
+    "per_subquestion": [
+      {
+        "id": "q1",
+        "text": "Identify the top 3 open-source vector databases most suitable for a startup developing RAG products.",
+        "evidence_count": 2,
+        "independent_domains": 1
+      },
+      {
+        "id": "q2",
+        "text": "Compare the identified vector databases on performance, scalability, and ease of integration for RAG use cases.",
+        "evidence_count": 4,
+        "independent_domains": 2
+      },
+      {
+        "id": "q3",
+        "text": "Summarize the pros and cons of each database for a startup building RAG products.",
+        "evidence_count": 0,
+        "independent_domains": 0
+      }
+    ]
+  },
+  "status": "DEGRADED",
+  "reasons": [
+    "BUDGET_EXHAUSTED",
+    "SNIPPET_ONLY_EVIDENCE",
+    "UNCOVERED_SUBQUESTIONS"
+  ],
+  "usage": {
+    "llm_calls": 6,
+    "input_tokens": 4878,
+    "output_tokens": 1584,
+    "searches": 4,
+    "fetches": 2,
+    "tool_retries": 0,
+    "latency_s": 20.061999999999898,
+    "est_cost_usd": null
+  }
+}

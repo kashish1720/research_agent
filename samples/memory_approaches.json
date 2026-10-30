@@ -1,0 +1,178 @@
+{
+  "run_id": "20261030T092829-f30648",
+  "user_question": "Compare different approaches to adding memory in an AI support agent.",
+  "short_answer": "AI support agents can add memory through short\u2011term context windows, long\u2011term persistent storage, and hybrid vector\u2011plus\u2011graph systems. Short\u2011term memory is fast but limited in size, long\u2011term memory allows cross\u2011session learning but adds latency, and hybrid systems aim to balance speed and depth. Scalability depends on pruning, tiered storage, and careful orchestration of multiple layers.",
+  "key_findings": [
+    {
+      "statement": "Short\u2011term memory provides immediate task context within the active window.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Long\u2011term persistent memory enables agents to store, retrieve, and learn from past interactions across sessions.",
+      "evidence_ids": [
+        "E2",
+        "E3"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Hybrid vector\u2011plus\u2011graph memory systems deliver a balance of speed and depth for retrieval.",
+      "evidence_ids": [
+        "E5"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Approximate k\u2011NN retrieval trades accuracy for speed, returning results in milliseconds.",
+      "evidence_ids": [
+        "E6"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Vector databases have tradeoffs between accuracy, speed, and memory usage.",
+      "evidence_ids": [
+        "E7"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Scalability requires pruning and tiered storage to control costs as memory volumes grow.",
+      "evidence_ids": [
+        "E8"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Integration complexity arises from coordinating short\u2011term, long\u2011term, vector, and graph memory layers.",
+      "evidence_ids": [
+        "E9"
+      ],
+      "support": "supported"
+    }
+  ],
+  "sources_used": [
+    {
+      "id": "S1",
+      "url": "https://www.letta.com/blog/agent-memory",
+      "domain": "letta.com",
+      "title": "Agent Memory: How to Build Agents That Learn and Remember | Letta",
+      "published_date": null,
+      "quality_score": 0.6695742619999999,
+      "fetched": false,
+      "snippet_only": true,
+      "flags": [],
+      "sub_question_ids": [
+        "q1"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://gleecus.com/blogs/ai-agent-memory-intelligent-ai-agents-2026",
+      "domain": "gleecus.com",
+      "title": "What Is AI Agent Memory and Why It Powers Intelligent AI Agents in 2026",
+      "published_date": "2026-04-02",
+      "quality_score": 0.6549252130769231,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q1",
+        "q2",
+        "q3"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://www.cbinsights.com/esp/enterprise-tech/enterprise-applications/ai-agent-memory-management",
+      "domain": "cbinsights.com",
+      "title": "AI Agent Memory Management - ESP on CB Insights",
+      "published_date": null,
+      "quality_score": 0.644309709,
+      "fetched": false,
+      "snippet_only": true,
+      "flags": [],
+      "sub_question_ids": [
+        "q1"
+      ]
+    },
+    {
+      "id": "S4",
+      "url": "https://redis.io/blog/ai-agent-memory-stateful-systems",
+      "domain": "redis.io",
+      "title": "AI agent memory: types, architecture & implementation",
+      "published_date": "2026-02-03",
+      "quality_score": 0.6710763066666666,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q2"
+      ]
+    }
+  ],
+  "confidence": {
+    "level": "MEDIUM",
+    "coverage_ratio": 1.0,
+    "avg_source_quality": 0.6599713726858973,
+    "min_independent_domains": 2,
+    "unresolved_conflicts": 0,
+    "snippet_only_ratio": 0.5,
+    "verification_complete": true,
+    "reasons": [
+      "All MEDIUM confidence conditions are satisfied.",
+      "Pass: coverage meets 0.70.",
+      "Pass: average source quality meets 0.50.",
+      "Pass: unresolved conflicts are at most 1.",
+      "Not met for HIGH: snippet-only share is at most 0.25."
+    ]
+  },
+  "limitations_and_assumptions": [
+    "No direct evidence compares latency or accuracy across the different memory approaches; the claims are descriptive rather than quantitative.",
+    "50% of evidence items came from snippets only.",
+    "candidate list from model knowledge, verified by q1 search"
+  ],
+  "suggested_next_steps": [
+    "Gather benchmark studies that measure response latency for each memory type. \nCollect accuracy metrics from real\u2011world support agent deployments using short\u2011term, long\u2011term, and hybrid memory. \nAnalyze infrastructure cost curves for tiered storage versus monolithic memory solutions. \nInterview architects to understand practical integration challenges in large\u2011scale systems."
+  ],
+  "conflicts": [],
+  "coverage": {
+    "total": 3,
+    "covered": 3,
+    "per_subquestion": [
+      {
+        "id": "q1",
+        "text": "Identify and list the main approaches to adding memory in an AI support agent.",
+        "evidence_count": 4,
+        "independent_domains": 3
+      },
+      {
+        "id": "q2",
+        "text": "Compare the performance impact of each memory approach on response latency and accuracy in an AI support agent.",
+        "evidence_count": 3,
+        "independent_domains": 2
+      },
+      {
+        "id": "q3",
+        "text": "Compare the scalability and integration complexity of each memory approach for large-scale AI support agents.",
+        "evidence_count": 4,
+        "independent_domains": 2
+      }
+    ]
+  },
+  "status": "DONE",
+  "reasons": [],
+  "usage": {
+    "llm_calls": 6,
+    "input_tokens": 5321,
+    "output_tokens": 1837,
+    "searches": 6,
+    "fetches": 3,
+    "tool_retries": 0,
+    "latency_s": 24.437999999998283,
+    "est_cost_usd": null
+  }
+}

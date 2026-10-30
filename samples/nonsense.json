@@ -1,0 +1,46 @@
+{
+  "run_id": "20261030T092925-c59321",
+  "user_question": "asdkjh qwpoeiru zxcmnb lkjhg",
+  "short_answer": "The request does not contain a clear question or topic to research.",
+  "key_findings": [],
+  "sources_used": [],
+  "confidence": {
+    "level": "LOW",
+    "coverage_ratio": 0.0,
+    "avg_source_quality": 0.0,
+    "min_independent_domains": 0,
+    "unresolved_conflicts": 0,
+    "snippet_only_ratio": 0.0,
+    "verification_complete": false,
+    "reasons": [
+      "Run status is FAILED_GRACEFULLY."
+    ]
+  },
+  "limitations_and_assumptions": [
+    "Clarification is needed: The request does not contain a clear question or topic to research."
+  ],
+  "suggested_next_steps": [
+    "Provide a more specific question or narrower scope.",
+    "Consult primary or official sources for the missing information."
+  ],
+  "conflicts": [],
+  "coverage": {
+    "total": 0,
+    "covered": 0,
+    "per_subquestion": []
+  },
+  "status": "FAILED_GRACEFULLY",
+  "reasons": [
+    "NOT_ANSWERABLE"
+  ],
+  "usage": {
+    "llm_calls": 1,
+    "input_tokens": 694,
+    "output_tokens": 80,
+    "searches": 0,
+    "fetches": 0,
+    "tool_retries": 0,
+    "latency_s": 0.8130000000019209,
+    "est_cost_usd": null
+  }
+}

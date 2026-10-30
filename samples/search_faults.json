@@ -1,0 +1,122 @@
+{
+  "run_id": "20261030T092957-91b2a8",
+  "user_question": "Compare the top 3 open-source vector databases for a startup building RAG products.",
+  "short_answer": "The top three open\u2011source vector databases for a startup building RAG products are Qdrant, Weaviate, and Milvus. Qdrant is praised for production\u2011ready RAG and metadata filtering, Weaviate offers self\u2011hostable and managed options, and Milvus supports high\u2011scale distributed search. While performance, scalability, and integration details are limited in the evidence, these three are commonly cited as leading choices.",
+  "key_findings": [
+    {
+      "statement": "Qdrant is highlighted as a suitable open\u2011source vector database for production RAG applications.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Weaviate is identified as an open\u2011source vector database suitable for RAG.",
+      "evidence_ids": [
+        "E2"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Milvus is described as an open\u2011source vector database for large\u2011scale RAG deployments.",
+      "evidence_ids": [
+        "E3"
+      ],
+      "support": "supported"
+    }
+  ],
+  "sources_used": [
+    {
+      "id": "S1",
+      "url": "https://www.datastackhub.com/top-tools/open-source-vector-database-tools",
+      "domain": "datastackhub.com",
+      "title": "8 Best Open Source Vector Database Tools For 2026 | Data Stack Hub",
+      "published_date": null,
+      "quality_score": 0.6717569075714286,
+      "fetched": false,
+      "snippet_only": true,
+      "flags": [],
+      "sub_question_ids": [
+        "q1"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://www.braintrust.dev/articles/best-vector-databases-for-rag-2026",
+      "domain": "braintrust.dev",
+      "title": "Best vector databases for RAG in 2026 - Articles - Braintrust",
+      "published_date": null,
+      "quality_score": 0.66875198,
+      "fetched": false,
+      "snippet_only": true,
+      "flags": [],
+      "sub_question_ids": [
+        "q1"
+      ]
+    }
+  ],
+  "confidence": {
+    "level": "LOW",
+    "coverage_ratio": 0.6666666666666666,
+    "avg_source_quality": 0.6702544437857143,
+    "min_independent_domains": 2,
+    "unresolved_conflicts": 0,
+    "snippet_only_ratio": 1.0,
+    "verification_complete": true,
+    "reasons": [
+      "Neither the HIGH nor MEDIUM confidence conditions are all satisfied.",
+      "Not met for MEDIUM: coverage meets 0.70."
+    ]
+  },
+  "limitations_and_assumptions": [
+    "No evidence is provided for performance, scalability, or ease of integration comparisons among Qdrant, Weaviate, and Milvus. No evidence is available for community support, documentation quality, or licensing implications of these databases.",
+    "No verified evidence was found for: Evaluate the community support, documentation quality, and licensing implications of the top 3 vector databases for a startup.",
+    "100% of evidence items came from snippets only.",
+    "A resource budget was exhausted before all research could complete.",
+    "candidate list from model knowledge, verified by q1 search"
+  ],
+  "suggested_next_steps": [
+    "1. Review benchmark studies comparing Qdrant, Weaviate, and Milvus on latency and throughput for vector similarity queries. \n2. Examine each project\u2019s GitHub activity, issue backlog, and community forums to gauge support levels. \n3. Inspect the documentation of each database for integration guides with popular RAG frameworks (e.g., LangChain, LlamaIndex). \n4. Verify the licenses (e.g., Apache 2.0, MIT) to ensure compliance with startup product requirements."
+  ],
+  "conflicts": [],
+  "coverage": {
+    "total": 3,
+    "covered": 2,
+    "per_subquestion": [
+      {
+        "id": "q1",
+        "text": "Identify the top 3 open-source vector databases suitable for a startup building RAG products.",
+        "evidence_count": 3,
+        "independent_domains": 2
+      },
+      {
+        "id": "q2",
+        "text": "Compare the identified vector databases on performance, scalability, and ease of integration for RAG use cases.",
+        "evidence_count": 4,
+        "independent_domains": 2
+      },
+      {
+        "id": "q3",
+        "text": "Evaluate the community support, documentation quality, and licensing implications of the top 3 vector databases for a startup.",
+        "evidence_count": 0,
+        "independent_domains": 0
+      }
+    ]
+  },
+  "status": "DEGRADED",
+  "reasons": [
+    "BUDGET_EXHAUSTED",
+    "SNIPPET_ONLY_EVIDENCE",
+    "UNCOVERED_SUBQUESTIONS"
+  ],
+  "usage": {
+    "llm_calls": 6,
+    "input_tokens": 4742,
+    "output_tokens": 1323,
+    "searches": 8,
+    "fetches": 4,
+    "tool_retries": 6,
+    "latency_s": 40.65599999999904,
+    "est_cost_usd": null
+  }
+}

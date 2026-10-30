@@ -1,0 +1,197 @@
+{
+  "run_id": "20261030T092729-28e0d4",
+  "user_question": "Research the pros and cons of using a multi-agent architecture for customer support automation.",
+  "short_answer": "A multi\u2011agent architecture can boost throughput and reduce latency by parallelizing tasks, and it allows clear separation of responsibilities with an AI Supervisor coordinating actions and policy enforcement. However, it introduces significant complexity in design, integration, and data quality requirements, and for tool\u2011heavy workflows it can incur coordination overhead that reduces efficiency compared to a single\u2011agent approach.",
+  "key_findings": [
+    {
+      "statement": "Distributed AI agents separate tasks among specialized agents working in parallel.",
+      "evidence_ids": [
+        "E1"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Parallelism at scale reduces latency and increases throughput for high\u2011volume workflows.",
+      "evidence_ids": [
+        "E2"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "An AI Supervisor coordinates agents, enforces policies, and escalates to humans.",
+      "evidence_ids": [
+        "E3"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "The initial setup of multi\u2011agent systems is complex and time\u2011consuming.",
+      "evidence_ids": [
+        "E5"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "High\u2011quality, up\u2011to\u2011date data is essential to avoid system errors.",
+      "evidence_ids": [
+        "E6"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Single\u2011agent systems are centralized, while multi\u2011agent systems are distributed or coordinated.",
+      "evidence_ids": [
+        "E7"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Single agents manage all steps, whereas multi\u2011agents cooperate via messages or a shared orchestrator.",
+      "evidence_ids": [
+        "E8"
+      ],
+      "support": "supported"
+    },
+    {
+      "statement": "Tool\u2011heavy tasks can suffer a 2x to 6x efficiency penalty in multi\u2011agent systems due to coordination overhead and context fragmentation.",
+      "evidence_ids": [
+        "E9"
+      ],
+      "support": "supported"
+    }
+  ],
+  "sources_used": [
+    {
+      "id": "S1",
+      "url": "https://www.ema.ai/additional-blogs/addition-blogs/understanding-distributed-ai-multi-agent-systems",
+      "domain": "ema.ai",
+      "title": "Distributed AI Agents: How Multi-Agent Systems Power - Ema",
+      "published_date": "2026-08-26",
+      "quality_score": 0.7255899628571428,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q1"
+      ]
+    },
+    {
+      "id": "S2",
+      "url": "https://finance.yahoo.com/news/typewise-introduces-multi-agent-orchestration-150000080.html",
+      "domain": "yahoo.com",
+      "title": "Typewise Introduces Multi-Agent Orchestration to Bring Enterprise AI Customer Service Into Production",
+      "published_date": "2026-02-23",
+      "quality_score": 0.66882911,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q1"
+      ]
+    },
+    {
+      "id": "S3",
+      "url": "https://cosupport.ai/articles/multi-agent-systems-orchestration-communication-collaboration",
+      "domain": "cosupport.ai",
+      "title": "Multi-Agent Systems: Orchestration, Communication, and Collaboration",
+      "published_date": "2025-10-25",
+      "quality_score": 0.65281595,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q2"
+      ]
+    },
+    {
+      "id": "S5",
+      "url": "https://www.jetbrains.com/pages/ai-agents/single-agent-vs-multi-agent-systems",
+      "domain": "jetbrains.com",
+      "title": "Single Agent vs Multi-Agent Systems: When to Use Each",
+      "published_date": "2026-07-27",
+      "quality_score": 0.70696777,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q3"
+      ]
+    },
+    {
+      "id": "S6",
+      "url": "https://www.olostep.com/blog/types-of-ai-agents",
+      "domain": "olostep.com",
+      "title": "Types of AI Agents: The 7 Core Architectures",
+      "published_date": "2026-05-19",
+      "quality_score": 0.6706093599999999,
+      "fetched": true,
+      "snippet_only": false,
+      "flags": [],
+      "sub_question_ids": [
+        "q3"
+      ]
+    }
+  ],
+  "confidence": {
+    "level": "MEDIUM",
+    "coverage_ratio": 1.0,
+    "avg_source_quality": 0.6849624305714286,
+    "min_independent_domains": 1,
+    "unresolved_conflicts": 0,
+    "snippet_only_ratio": 0.0,
+    "verification_complete": true,
+    "reasons": [
+      "All MEDIUM confidence conditions are satisfied.",
+      "Pass: coverage meets 0.70.",
+      "Pass: average source quality meets 0.50.",
+      "Pass: unresolved conflicts are at most 1.",
+      "Not met for HIGH: each covered sub-question has at least 2 independent domains."
+    ]
+  },
+  "limitations_and_assumptions": [
+    "No evidence directly compares overall trade\u2011offs beyond the cited efficiency penalty for tool\u2011heavy tasks. The impact of coordination overhead on non\u2011tool\u2011heavy workflows is not documented. No data on cost or maintenance differences between architectures. No evidence on user satisfaction or error rates in real deployments.",
+    "Assumes multi-agent architecture refers to distributed AI agents collaborating for customer support tasks.",
+    "Assumes focus on current industry practices and academic literature up to 2026.",
+    "Assumes no specific company or product is required."
+  ],
+  "suggested_next_steps": [
+    "Collect case studies that quantify latency and throughput gains in multi\u2011agent customer support systems. Gather empirical data on maintenance costs and error rates for both architectures. Interview practitioners about perceived complexity and training requirements. Analyze user satisfaction metrics to assess the trade\u2011off between speed and reliability."
+  ],
+  "conflicts": [],
+  "coverage": {
+    "total": 3,
+    "covered": 3,
+    "per_subquestion": [
+      {
+        "id": "q1",
+        "text": "Identify the main advantages of implementing a multi-agent architecture in customer support automation.",
+        "evidence_count": 4,
+        "independent_domains": 2
+      },
+      {
+        "id": "q2",
+        "text": "Identify the main disadvantages or challenges of implementing a multi-agent architecture in customer support automation.",
+        "evidence_count": 2,
+        "independent_domains": 1
+      },
+      {
+        "id": "q3",
+        "text": "Compare the overall trade-offs between single-agent and multi-agent architectures for customer support automation.",
+        "evidence_count": 4,
+        "independent_domains": 2
+      }
+    ]
+  },
+  "status": "DONE",
+  "reasons": [],
+  "usage": {
+    "llm_calls": 6,
+    "input_tokens": 5265,
+    "output_tokens": 1670,
+    "searches": 6,
+    "fetches": 6,
+    "tool_retries": 0,
+    "latency_s": 28.0,
+    "est_cost_usd": null
+  }
+}
